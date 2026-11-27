@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8" >
+      <title>C-command</title> 
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>C-command</h1>
+        <p>A node c-commands another node if every branching node dominating the first also dominates the second, and the first does not dominate the second.</p>
+        <p>It is a structural relationship between two nodes in a tree and asks if these two things are in the right hierarchical relationship.</p>
+        <h2>Example</h2>
+        <p>In the English sentence, "John likes himself", John c-commands himself.</p2>
+        <h2>Tree Diagram</h2>
+        <pre>
+                   S
+                /     \
+              NP       VP
+              |       /  \
+             John    V    NP
+                     |     |
+                    likes himself
+        </pre>
+        <h2>Alternative view</h2>
+        <p>The best way to picture c-command is as a family tree: a node c-commands its sister and everything descended from her. In other words, it c-commands its siblings, its nieces and nephews, and their kids, but never its own children or its parents.</p>
+        <h2>Practice</h2>
+        <p>1. In <em>The dog chased the cat</em>, does the subject <em>the dog</em> c-command the object <em>the cat</em>?</p>
+        <details>
+            <summary>Show answer</summary>
+            <p>Yes. The first branching node above the dog is TP, and TP dominates the cat. Neither one dominates the other.</p>
+        </details>
+        <p>2. Why is *Mary's brother likes herself ungrammatical?</p>
+        <details>
+            <summary>Show answer</summary>
+            <p>A reflexive needs an antecedent that c-commands it. Mary sits inside the subject DP Mary's brother, so it doesn't c-command herself. The only c-commanding DP is Mary's brother, which is masculine, so herself has no fitting antecedent.</p>
+        </details>
+        <p>3. In Hindi, <em>Ram ne khaana khaaya</em>, does the subject <em>Ram </em> c-command <em>khaana</em>?</p>
+        <details>
+            <summary>Show answer</summary>
+            <p>Yes. The first branching node above Ram is TP, and TP dominates khaana. Neither one dominates the other. Hindi is head-final (SOV), so the object comes before the verb, but the hierarchy is the same as in English.</p>
+        </details>
+        <h2>Sources</h2>
+        <ul>
+            <li>Carnie, <cite>Syntax: A Generative Introduction</cite>, ch. 4</li>
+            <li>Barrie, <cite>Introduction to Generative Syntax</cite>, ch. 3</li>
+        </ul>
+        <h2>Related concepts</h2>
+        <p>See also: Constituentd, Dominance, Binding</p>
+    </body>
+</html>
