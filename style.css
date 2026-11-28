@@ -17,3 +17,9 @@ a { color: #4b86b4; }
 .gloss td {
     padding-right: 1.5em;
 }
+.gloss {
+    margin-left: 4em;
+}
+.translation{
+    margin-left: 4em;
+}
