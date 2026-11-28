@@ -7,3 +7,13 @@ body {
 }
 h1 { color: #dc143c; }
 a { color: #4b86b4; }
+
+/* Glosses and indented lines */
+.subline {
+    margin-left: 2em;
+    margin-top: 0;
+}
+
+.gloss td {
+    padding-right: 1.5em;
+}
