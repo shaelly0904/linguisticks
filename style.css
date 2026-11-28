@@ -20,6 +20,23 @@ a { color: #4b86b4; }
 .gloss {
     margin-left: 4em;
 }
-.translation{
+.gloss tr:first-child td { font-style: italic; }
+
+.translation {
     margin-left: 4em;
+}
+.note {
+    background: #f3f0ff;
+    border-left: 4px solid #7a5cff;
+    padding: 1em;
+    margin: 1em 0;
+}
+.ni {
+    color:#7a5cff;
+    font-weight: bold;
+}
+.compare { border-collapse: collapse;}
+.compare th, .compare td {
+    border: 1px solid #ccc;
+    padding: o.5em 1em;
 }
